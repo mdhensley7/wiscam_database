@@ -3,6 +3,7 @@
 import os
 import sys
 import pandas as pd
+import sqlalchemy
 from datetime import datetime
 from sqlalchemy import (
     create_engine, MetaData, Table, Column, Integer, BigInteger, String, Text,

@@ -351,3 +351,190 @@ pip install pandas sqlalchemy psycopg2 openpyxl #install dependencies
 
 ```
 
+### Jan 8 2026
+I have been having crossover errors where conda is autoactivating my (WiscAmPhen) environment so I had to delete the conda initialize code in ~/.zshrc (the shell). IMPORTANT NOTE:
+- if you need to activate a conda environment use this code:
+
+```zsh
+
+# Load Conda into your shell
+source /path/to/miniconda3/etc/profile.d/conda.sh
+
+# Then activate an environment
+conda activate myenv #myenv I believe is replaced with environment name
+
+```
+
+Anywho, now that it is deactivated I am going to try and see if the code copilot gave me can in fact transfer the normalized data in the Excel sheet to postgresql in an organized manner. It seems like it lines up quite nicely so we will see if it can do it seemlessly.
+
+I have been trying to get python and postgres to integrate but it has been wierd and I think I'll be better off manually entering the tables in pgadmin so I have a good understanding of the structure I am giving the database. 
+
+That said pgadmin kinda sucks. It's slow and I have to run the whole query rather than in chunks which means I have to erase the code I used to generate tables etc. So I will be placing the code I used to create the database here even though it was being executed through pgadmin's query window.
+
+#### Code used in pgadmin to set up tables for my database
+
+```SQL
+-- This is the parent table which the other tables with the morphological features will reference back to
+CREATE TABLE specimens (
+    specimen_id   TEXT PRIMARY KEY,
+    species       TEXT,
+    sectionid     TEXT,
+    collector     TEXT,
+    hosttree1     TEXT,
+    hosttree2     TEXT,
+    lat           DOUBLE PRECISION,
+    long          DOUBLE PRECISION,
+    county        TEXT,
+    site          TEXT,
+    datecollected DATE
+);
+
+-- Use code below to check if table has been made and is formatted correctly
+SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_schema = 'public' AND table_name = 'specimens'
+ORDER BY ordinal_position;
+```
+
+The next code block will include all of the child tables
+
+```SQL
+---
+-- Child table 1: Pileus
+---
+CREATE TABLE pileus (
+    specimen_id          TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species              TEXT,
+    diameter_mm          DOUBLE PRECISION,
+    centercolor          TEXT,
+    margincolor          TEXT,
+    shape                TEXT,
+    surfacetexture       TEXT,
+    umbonate             TEXT,
+    striationlength_mm   DOUBLE PRECISION,
+    appendiculate        TEXT,
+    universalveilpresent TEXT,
+    staining             TEXT,
+    contextcolor         TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_pileus_specimen_id ON pileus(specimen_id);
+
+---
+-- Child table 2: Universal_veil_pileus
+---
+CREATE TABLE universal_veil_pileus (
+    specimen_id TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species     TEXT,
+    form        TEXT,
+    color       TEXT,
+    texture     TEXT,
+    attachment  TEXT,
+    distribution TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_universal_veil_pileus_specimen_id ON universal_veil_pileus(specimen_id);
+
+---
+-- Child table 3: Lamellae
+---
+CREATE TABLE lamellae (
+    specimen_id   TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species       TEXT,
+    attachment    TEXT,
+    colorinmasse  TEXT,
+    distribution  TEXT,
+    staining      TEXT,
+    breadth       TEXT,
+    edge          TEXT,
+    othercomment  TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_lamellae_specimen_id ON lamellae(specimen_id);
+
+---
+-- Child table 4: Lamellulae
+---
+CREATE TABLE lamellulae (
+    specimen_id  TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species      TEXT,
+    form         TEXT,
+    amount       TEXT,
+    distribution TEXT,
+    ending       TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_lamellulae_specimen_id ON lamellulae(specimen_id);
+
+---
+-- Child table 5: Stipe
+---
+CREATE TABLE stipe (
+    specimen_id      TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species          TEXT,
+    length_mm        DOUBLE PRECISION,
+    width_mm         DOUBLE PRECISION,
+    color            TEXT,
+    shape            TEXT,
+    decoration_bottom TEXT,
+    decoration_top    TEXT,
+    staining         TEXT,
+    annulus          TEXT,
+    universal_veil   TEXT,
+    context_type     TEXT,
+    context_color    TEXT,
+    context_stain    TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_stipe_specimen_id ON stipe(specimen_id);
+
+---
+-- Child table 6: Annulus
+---
+CREATE TABLE annulus (
+    specimen_id       TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species           TEXT,
+    position          TEXT,
+    form              TEXT,
+    color             TEXT,
+    staining          TEXT,
+    remainingpercent  DOUBLE PRECISION,
+    condition         TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_annulus_specimen_id ON annulus(specimen_id);
+
+---
+-- Child table 7: Universal_veil_stipe_base
+---
+CREATE TABLE universal_veil_stipe_base (
+    specimen_id   TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species       TEXT,
+    type          TEXT,
+    texture       TEXT,
+    color         TEXT,
+    layered       TEXT,
+    toughorflimsy TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_universal_veil_stipe_base_specimen_id ON universal_veil_stipe_base(specimen_id);
+
+---
+-- Child table 8: basal_bulb
+---
+CREATE TABLE basal_bulb (
+    specimen_id TEXT REFERENCES specimens(specimen_id) ON DELETE CASCADE,
+    species     TEXT,
+    length_mm   DOUBLE PRECISION,
+    width_mm    DOUBLE PRECISION,
+    shape       TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_basal_bulb_specimen_id ON basal_bulb(specimen_id);
+
+```
+
+All the tables are into the data base and I was even able to configure the 'specimens' csv sheet so that it would import into the table. What's cool is that it totally worked and I can now start to see how this all will come together.
+
+### Next steps
+
+- Figure out how to make importing and editing data easy
+    - This likely means having all of your columns completely set and defined in each table
+    - We may have to add a few more columns but maybe there's and easy way to add columns and only have to import that data.
+
+- Part of this is keeping in mind this is not the full dataset. If you are making edits, do it to the complete excel sheet "specimens_long.xlsx" so that formatting remains the same across the board.
+    - I just editted the hosttree names in only the specimen_long_filtered.xlsx which means I will have to go back to the main excel workbook to apply changes there as well.
+
+- I think it would be a good call to feed copilot the whole sheet and tell it to fix any formatting inconsistencies on the whole sheet and clean anything else so then we can import .csv files that are already clean. On top of that, ask copilot to add an excel spreadsheet to the workbook that explains how to input data so that it remains clean as it gets fed into the database.
