@@ -336,7 +336,7 @@ postgres-# \q
 
 Then I access the database via
 ```zsh
-psql -U mdhensley7 -d great_wiscam_dbs
+psql -U mdhensley7 -d great_wiscam_db
 ```
 exit databade using \q
 
@@ -375,6 +375,7 @@ That said pgadmin kinda sucks. It's slow and I have to run the whole query rathe
 
 ```SQL
 -- This is the parent table which the other tables with the morphological features will reference back to
+-- NOT USING THIS EXACT FORMAT FIND USED FORMAT BELOW (JAN20th)
 CREATE TABLE specimens (
     specimen_id   TEXT PRIMARY KEY,
     species       TEXT,
@@ -527,6 +528,7 @@ CREATE INDEX IF NOT EXISTS idx_basal_bulb_specimen_id ON basal_bulb(specimen_id)
 ```
 
 All the tables are into the data base and I was even able to configure the 'specimens' csv sheet so that it would import into the table. What's cool is that it totally worked and I can now start to see how this all will come together.
+- Jan 20th note: Would've been nice to outline how I input the .csv so I could remember how to do it
 
 ### Next steps
 
@@ -538,3 +540,91 @@ All the tables are into the data base and I was even able to configure the 'spec
     - I just editted the hosttree names in only the specimen_long_filtered.xlsx which means I will have to go back to the main excel workbook to apply changes there as well.
 
 - I think it would be a good call to feed copilot the whole sheet and tell it to fix any formatting inconsistencies on the whole sheet and clean anything else so then we can import .csv files that are already clean. On top of that, ask copilot to add an excel spreadsheet to the workbook that explains how to input data so that it remains clean as it gets fed into the database.
+
+### Jan 20 2026 -- Deleting current data in database and uploading entire excel sheet
+
+I fully cleaned wiscam_master to make sure all columns and rows are consistent. The main thing that will need to get updated is the species names as they come in. That said, this should be relatively easy to do in postgres as the names come in. The code outline how to add/delete/edit data within the tables is outlined below
+
+#### Deleting data
+
+I am doing this to get rid of the current data in the 'specimens' table so I can upload wiscam_master cleanly
+
+```SQL
+DROP TABLE specimens; --Deletes the entire table
+-- HOWEVER, doing just this created an error because the other tables depend on this table because of specimen_id
+-- The easiest appraoch right now is to just wipe all of the tables and recreate them because it realy is just a matter of copy and paste from the table creation code saved above
+
+DROP TABLE specimens CASCADE; -- Cascade deletes any dependencies on this table in other tables 
+DROP TABLE annulus CASCADE;
+DROP TABLE basal_bulb CASCADE;
+DROP TABLE lamellae CASCADE;
+DROP TABLE lamellulae CASCADE;
+DROP TABLE pileus CASCADE;
+DROP TABLE stipe CASCADE;
+DROP TABLE universal_veil_pileus CASCADE;
+DROP TABLE universal_veil_stipe_base CASCADE; -- pretty sure only the 'specimens' table needed the CASCADE because there we no other dependencies between tables
+
+
+---
+-- Recreate the table but somewhat modified to fit the new and improved specimens table in the format I want
+---
+
+CREATE TABLE specimens (
+    specimen_id            TEXT PRIMARY KEY,
+    species                TEXT,
+    sectionid              TEXT,
+    collector              TEXT,
+    lat                    DOUBLE PRECISION,
+    long                   DOUBLE PRECISION,
+    county                 TEXT,
+    site                   TEXT,
+    datecollected          DATE,
+    microscopy             TEXT,
+    hosttree1_common       TEXT,
+    hosttree1_scientific   TEXT,
+    hosttree2_common       TEXT,
+    hosttree2_scientific   TEXT
+);
+
+
+---
+-- Use code below to check if table has been made and is formatted correctly
+---
+SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_schema = 'public' AND table_name = 'specimens'
+ORDER BY ordinal_position;
+
+-- The code for the other tables is found above so I copy and pasted from there
+```
+At this point I completely wiped the datasets but have the tables back. I query search the specimens table and I don't see input data so I'm looking golden. Time to begin inputting the data into each of the tables.
+
+1. First thing's first, I have to delete all of the .csv files currently in the clean dat folder. They are not what I want at all.
+
+```zsh
+cd /Users/hensley/Desktop/wiscam_database/database/sampledata
+
+rm -r *.csv ## Careful!
+```
+
+2. Convert sheets in wiscam_master to .csv files
+
+I converted the 'specimens' sheet and had it reviewed and cleaned by copilot so it should be ready to import into the database.
+
+The code below is what I used to input the data from my 'specimens_cleaned.csv' into my database
+```SQL
+\copy specimens --change this to title of table you want
+FROM 'path/to/.csv' --change to.csv wanted
+CSV HEADER
+NULL '';
+
+```
+The .csv files I used are found in 'csv_cleaned' folder. All of them worked and, at this point, all data is uploaded to the relation database.
+
+Next steps:
+- Learn more about sql language following the pdf Pat sent you. You should learn query commands and how the pertain to your database
+
+- Mess around with it and take notes on what works, what doesn't, what's useful, what isn't
+
+- Think about where this thing will be applied/uploaed/etc
+    - Talk to Anne at some point and show her this puppy!

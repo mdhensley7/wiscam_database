@@ -1,0 +1,143 @@
+specimen_id,species,sectionid,collector,lat,long,county,site,datecollected,microscopy,hosttree1_common,hosttree1_scientific,hosttree2_common,hosttree2_scientific
+30181,Amanita bisporigera,Phalloideae,MH,43.228208,-89.733018,Dane,Lower Wisconsin State Riverway,2024-08-25,yes,spruce,Picea,,
+30182,Amanita suballiacea,Phalloideae,MH,43.126597,-89.370765,Dane,Warner Park,2024-08-26,yes,red oak,Quercus rubra,,
+30183,Amanita oberwinkleriana,Roanokensis,MH,42.859437,-89.499095,Dane,Brooklyn Wildlife Area,2024-08-28,yes,white oak,Quercus alba,,
+30184,Amanita suballiacea,Phalloideae,MH,42.85954,-89.498477,Dane,Brooklyn Wildlife Area,2024-08-28,yes,black oak,Quercus velutina,large toothed aspen,Populus deltoides
+30185,,Vaginatae,MH,42.859634,-89.498441,Dane,Brooklyn Wildlife Area,2024-08-28,yes,red oak,Quercus rubra,black oak,Quercus velutina
+30186,Amanita sp 44,Vaginatae,MH,42.857191,-89.497948,Dane,Brooklyn Wildlife Area,2024-08-28,yes,white oak,Quercus alba,,
+30187,Amanita suballiacea,Phalloideae,MH,42.858051,-89.499412,Dane,Brooklyn Wildlife Area,2024-08-28,yes,red oak,Quercus rubra,,
+30187_2,Amanita suballiacea,Phalloideae,MH,42.858051,-89.499412,Dane,Brooklyn Wildlife Area,2024-08-28,yes,red oak,Quercus rubra,,
+30187_3,Amanita suballiacea,Phalloideae,MH,42.858089,-89.499331,Dane,Brooklyn Wildlife Area,2024-08-28,yes,red oak,Quercus rubra,,
+30188,,Vaginatae,MH,42.942406,-89.591319,Dane,Madison Metropolitan School Forest,2024-08-29,yes,white oak,Quercus alba,,
+30189,Amanita rhacopus,Vaginatae,MH,46.853603,-87.843934,Marquette (MI),North Ives Lake Trail,2024-09-01,yes,eastern hemlock,Tsuga canadensis,,
+30190,Amanita frostiana,Amanita,MH,46.854574,-87.851893,Marquette (MI),North Ives Lake Trail,2024-09-01,yes,white pine,Pinus strobus,red pine,Pinus resinosa
+30191,Amanita frostiana,Amanita,MH,46.854777,-87.851744,Marquette (MI),North Ives Lake Trail,2024-09-01,yes,white pine,Pinus strobus,red pine,Pinus resinosa
+30192,Amanita muscaria var. guessowii,Amanita,MH,46.855325,-87.857067,Marquette (MI),Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30193,,Vaginatae,MH,46.85525,-87.85702,Marquette (MI),Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,,
+30193_2,,Vaginatae,MH,46.85525,-87.85702,Marquette (MI),Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,,
+30193_3,,Vaginatae,MH,46.85525,-87.85702,Marquette,Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,,
+30194,,Vaginatae,MH,46.878951,-87.866935,Marquette (MI),Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30194_2,,Vaginatae,MH,46.878951,-87.866935,Marquette,Mount Ives,2024-09-01,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30195,Amanita amerivirosa,Phalloideae,MH,46.855326,-87.854777,Marquette (MI),East Pine Lake,2024-09-01,yes,red pine,Pinus resinosa,white pine,Pinus strobus
+30196,Amanita muscaria var. guessowii,Amanita,MH,46.379043,-86.467467,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30197,Amanita muscaria var. guessowii,Amanita,MH,46.378762,-86.467939,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30198,,Vaginatae,MH,46.37853,-86.468574,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30199,,Phalloideae,MH,46.377907,-86.468248,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30199_2,,Phalloideae,MH,46.377907,-86.468248,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30199_3,,Phalloideae,MH,46.377907,-86.468248,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30199_4,,Phalloideae,MH,46.377907,-86.468248,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,birch,Betula
+30200,Amanita bisporigera,Phalloideae,MH,46.377559,-86.46914,Alger country MI,Cusino,2024-09-07,yes,fir,Abies,poplar,Populus
+30201,,Validae,MD,46.378936,-86.461572,Alger country MI,Cusino,2024-09-07,yes,poplar,Populus,fir,Abies
+30202,,Validae,MH,46.378844,-86.461312,Alger country MI,Cusino,2024-09-07,yes,Conifer,,,
+30203,,Phalloideae,MH,46.378917,-86.461222,Alger country MI,Cusino,2024-09-07,yes,eastern hemlock,Tsuga canadensis,,
+30204,,Phalloideae,MH,46.378679,-86.460284,Alger country MI,Cusino,2024-09-07,yes,Conifer,,eastern hemlock,Tsuga canadensis
+30204_2,,Phalloideae,MH,46.378679,-86.460284,Alger country MI,Cusino,2024-09-07,yes,Conifer,,eastern hemlock,Tsuga canadensis
+30204_3,,Phalloideae,MH,46.378679,-86.460284,Alger country MI,Cusino,2024-09-07,yes,Conifer,,eastern hemlock,Tsuga canadensis
+30204_4,,Phalloideae,MH,46.378679,-86.460284,Alger country MI,Cusino,2024-09-07,yes,Conifer,,eastern hemlock,Tsuga canadensis
+30205,Amanita flavoconia,Validae,MH,46.378658,-86.460201,Alger country MI,Cusino,2024-09-07,yes,Conifer,,eastern hemlock,Tsuga canadensis
+30206,Amanita flavoconia,Validae,MH,46.378638,-86.459693,Alger country MI,Cusino,2024-09-07,yes,Conifer,,birch,Betula
+30207,,Validae,MH,46.378647,-86.45964,Alger country MI,Cusino,2024-09-07,yes,Conifer,,birch,Betula
+30208,,Validae,MH,46.246946,-86.414343,Schoolcraft MI,Clear Lake Education Center,2024-09-07,yes,birch,Betula,pine,Pinus
+30208_2,,Validae,MH,46.246946,-86.414343,Schoolcraft MI,Clear Lake Education Center,2024-09-07,yes,birch,Betula,pine,Pinus
+30209,Amanita amerivirosa,Phalloideae,VTC,46.24911942,-86.41471939,Schoolcraft MI,Clear Lake Education Center,2024-09-07,yes,birch,Betula,,
+30210,Amanita muscaria var. guessowii,Amanita,MH,45.696123,-87.945318,Marinette,Smalley Falls,2024-09-08,yes,pine,Pinus,,
+30211,Amanita muscaria var. guessowii,Amanita,MH,45.694809,-87.944836,Marinette,Smalley Falls,2024-09-08,no,Conifer,,birch,Betula
+30212,,Amidella,MH,43.646572,-89.782858,Adams,Chapel Gorge,2024-09-21,yes,white oak,Quercus alba,white pine,Pinus strobus
+30213,,Validae,MH,43.646914,-89.787109,Adams,Chapel Gorge,2024-09-21,yes,white oak,Quercus alba,,
+30214,,Validae,MH,43.647449,-89.787718,Adams,Chapel Gorge,2024-09-21,yes,white oak,Quercus alba,white pine,Pinus strobus
+30215,,Vaginatae,MH,43.560563,-89.815882,Sauk,Mirror Lake State Park,2024-09-27,yes,white pine,Pinus strobus,,
+30216,,Validae,MH,43.556478,-89.808497,Sauk,Mirror Lake State Park,2024-09-27,,black oak,Quercus velutina,white pine,Pinus strobus
+30217,,Validae,MH,43.563188,-89.823147,Sauk,Mirror Lake State Park,2024-09-27,,white pine,Pinus strobus,white oak,Quercus alba
+30218,,Validae,MH,43.563255,-89.823113,Sauk,Mirror Lake State Park,2024-09-27,,white pine,Pinus strobus,white oak,Quercus alba
+30219,,Validae,MH,43.564545,-89.821597,Sauk,Mirror Lake State Park,2024-09-27,,white pine,Pinus strobus,white oak,Quercus alba
+30220,,Vaginatae,MH,43.227997,-89.73317,Dane,Lower Wisconsin Riverway,2025-06-29,,white oak,Quercus alba,,
+30221,,Amanita,UK,,,Dane,Lower Wisconsin Riverway,2025-06-29,,,,,
+30222,,Amanita,MH,43.431252,-89.729882,Sauk,Devil's Lake State Park,2025-07-06,,maple,Acer,,
+30223,,Amanita,MH,43.429366,-89.730068,Sauk,Devil's Lake State Park,2025-07-06,,white oak,Quercus alba,,
+30223_2,,Amanita,MH,43.429366,-89.730068,Sauk,Devil's Lake State Park,2025-07-06,,white oak,Quercus alba,,
+30223_3,,Amanita,MH,43.429366,-89.730068,Sauk,Devil's Lake State Park,2025-07-06,,white oak,Quercus alba,,
+30224,,Amanita,MH,43.4294,-89.730139,Sauk,Devil's Lake State Park,2025-07-06,,white oak,Quercus alba,maple,Acer
+30224_2,,Amanita,MH,43.4294,-89.730139,Sauk,Devil's Lake State Park,2025-07-06,,white oak,Quercus alba,maple,Acer
+30225,Amanita populiphila,Amanita,MH,43.06907,-89.38351,Dane,Monona bike path,2025-07-17,,poplar,Populus,,
+30226,Amanita sp NY06,Amanita,RT,45.929363,-88.993585,Forest,Franklin nature trail,2025-07-18,,eastern hemlock,Tsuga canadensis,,
+30226_2,Amanita sp NY06,Amanita,RT,45.929363,-88.993585,Forest,Franklin nature trail,2025-07-18,,eastern hemlock,Tsuga canadensis,,
+30227,Amanita sp NY06,Amanita,AGW,45.92895,-88.99489,Forest,Franklin nature trail,2025-07-18,,eastern hemlock,Tsuga canadensis,,
+30228,Amanita flavoconia,Validae,AGW,45.929495,-88.99324,Forest,Franklin,2025-07-18,,eastern hemlock,Tsuga canadensis,,
+30229,,Amanita,MH,45.929271,-88.993245,Forest,Franklin,2025-07-18,,eastern hemlock,Tsuga canadensis,,
+30230,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_2,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_3,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_4,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_5,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_6,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_7,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30230_8,Amanita aff. rubescens,Validae,MH,45.321388,-89.089275,Forest,Jack Lake,2025-07-19,,white pine,Pinus strobus,red oak,Quercus rubra
+30231,Amanita aff. rubescens,Validae,RT,45.321194,-89.088912,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30232,Amanita aff. rubescens,Validae,RT,45.321128,-89.088746,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30233,Amanita rhacopus,Vaginatae,RT,45.318845,-89.088888,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30234,Amanita rhacopus,Vaginatae,RT,45.318796,-89.091751,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30235,,Amanita,RT,45.321384,-89.09192,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30236,,Validae,RT,45.321362,-89.091943,Forest,Jack Lake,2025-07-19,,eastern hemlock,Tsuga canadensis,,
+30237,,Vaginatae,UK,,,Forest,,2025-07-19,,,,,
+30238,,Validae,RT,43.4239829,-89.7379613,Sauk,Devil's Lake,2025-07-26,,oak,Quercus,,
+30239,Amanita virginiana,Caesareae,RT,43.421982,-89.709185,Dane,Devil's Lake,2025-07-27,,,,,
+30239_2,Amanita virginiana,Caesareae,RT,43.421982,-89.709185,Dane,Devil's Lake,2025-07-27,,,,,
+30240,,Phalloideae,CKS,43.428805,-89.71467,Sauk,Devil's Lake,2025-07-27,,,,,
+30242,,Amanita,RT,46.801173,-90.907772,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30243,,Vaginatae,RT,46.800944,-90.907705,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30244,,Vaginatae,RT,46.800243,-90.907105,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30245,,Vaginatae,RT,46.800088,-90.907112,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30246,Amanita brunnescens,Vaginatae,RT,46.799794,-90.906808,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30247,,Vaginatae,RT,46.800146,-90.905843,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30248,Amanita brunnescens,Validae,RT,46.800259,-90.905975,Bayfield,Jay Justice Trail,2025-08-08,,eastern hemlock,Tsuga canadensis,,
+30249,Amanita sp NY06,Validae,MH,46.83976,-90.878988,Bayfield,Schultz's Fire Lane,2025-08-08,,eastern hemlock,Tsuga canadensis,birch,Betula
+30249_2,Amanita sp NY06,Validae,MH,46.83976,-90.878988,Bayfield,Schultz's Fire Lane,2025-08-08,,eastern hemlock,Tsuga canadensis,birch,Betula
+30250,,Vaginatae,MH,46.839327,-90.880736,Bayfield,Schultz's Fire Lane,2025-08-08,,,,,
+30250_2,,Vaginatae,MH,46.839327,-90.880736,Bayfield,Schultz's Fire Lane,2025-08-08,,,,,
+30251,,Vaginatae,UK,,,Bayfield,Schultz's Fire Lane,2025-08-08,,,,,
+30252,Amanita aff. rubescens,Validae,Peyton Martinson,,,Bayfield,Stockton Island,2025-08-08,,,,,
+30253,Amanita brunnescens,Validae,RT,46.846346,-90.82262,Bayfield,Martenson Property,2025-08-09,,eastern hemlock,Tsuga canadensis,,
+30254,Amanita brunnescens,Validae,RT,46.846402,-90.822445,Bayfield,Martenson property,2025-08-09,,eastern hemlock,Tsuga canadensis,,
+30255,,Vaginatae,RT,46.845863,-90.822096,Bayfield,Martenson Property,2025-08-09,,eastern hemlock,Tsuga canadensis,,
+30256,Amanita rhacopus,Vaginatae,RT,46.846855,-90.821187,Bayfield,Martenson Property,2025-08-09,,eastern hemlock,Tsuga canadensis,birch,Betula
+30257,,Vaginatae,RT,46.84752,-90.821588,Bayfield,Martenson Property,2025-08-09,,eastern hemlock,Tsuga canadensis,,
+30257_2,,Vaginatae,RT,46.84752,-90.821588,Bayfield,Martenson Property,2025-08-09,,eastern hemlock,Tsuga canadensis,,
+30258,Amanita brunnescens,Validae,MH,46.529401,-92.118104,Douglas,Pattison State Park,2025-08-15,,eastern hemlock,Tsuga canadensis,,
+30259,Amanita brunnescens,Validae,MH,46.521889,-91.582625,Douglas,North County Trail,2025-08-16,,eastern hemlock,Tsuga canadensis,,
+30260,Amanita solaniolens,Validae,MH,46.519818,-91.583674,Douglas,North Country National Scenic Trail,2025-08-16,,eastern hemlock,Tsuga canadensis,oak,Quercus
+30261,,Amanita,MH,46.292988,-91.201343,Bayfield,Twin Lakes Campground Owen Lake,2025-08-17,,eastern hemlock,Tsuga canadensis,oak,Quercus
+30262,,Vaginatae,MH,46.134359,-91.318906,Sawyer,Seeley Pass Trail,2025-08-17,,white pine,Pinus strobus,oak,Quercus
+30263,Amanita brunnescens,Validae,MH,45.874727,-89.651805,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,eastern hemlock,Tsuga canadensis
+30264,Amanita aff. rubescens,Validae,MH,45.874671,-89.651816,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,eastern hemlock,Tsuga canadensis
+30265,,Validae,MH,45.87507,-89.651301,Oneida,Hemlock Lake,2025-08-18,,eastern hemlock,Tsuga canadensis,,
+30267,,Phalloideae,MH,45.875339,-89.650013,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,,
+30268,,Vaginatae,MH,45.875348,-89.649979,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,eastern hemlock,Tsuga canadensis
+30269,,Phalloideae,MH,45.876065,-89.647622,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,eastern hemlock,Tsuga canadensis
+30270,,Phalloideae,MH,46.072357,-89.649657,Oneida,Hemlock Lake,2025-08-18,,white pine,Pinus strobus,,
+30271,,Validae,MH,45.992786,-89.618371,Vilas,Fallison Lake,2025-08-19,,eastern hemlock,Tsuga canadensis,white pine,Pinus strobus
+30272,Amanita brunnescens,Validae,MH,45.992614,-89.618163,Vilas,Fallison Lake,2025-08-19,,eastern hemlock,Tsuga canadensis,,
+30273,,Phalloideae,MH,45.217368,-91.38919,Chippewa,Ice Age National Scientific reserve,2025-08-19,,oak,Quercus,,
+30274,,Amidella,MH,45.217257,-91.388923,Chippewa,Ice Age National Scientific Reserve,2025-08-19,,oak,Quercus,,
+30274_2,,Amidella,MH,45.217257,-91.388923,Chippewa,Ice Age National Scientific Reserve,2025-08-19,,oak,Quercus,,
+30275,Amanita bisporigera,Phalloideae,MH,45.224161,-91.415863,Chippewa,Chippewa Moraine State Recreation Area,2025-08-20,,oak,Quercus,,
+30276,,,MH,45.224975,-91.416034,Chippewa,Chippewa Moraine,2025-08-20,,oak,Quercus,,
+30277,Amanita bisporigera,Phalloideae,MH,45.223999,-91.412334,Chippewa,Chippewa Moraine State Recreation Area,2025-08-20,,red oak,Quercus rubra,black oak,Quercus velutina
+30278,,Vaginatae,MH,46.256701,-91.962016,Douglas,St. Croix Flowage,2025-08-21,,eastern hemlock,Tsuga canadensis,,
+30279,,Phalloideae,MH,45.97261,-91.662941,Washburn,Wayside near Springbrook,2025-08-21,,black oak,Quercus velutina,red pine,Pinus resinosa
+30280,Amanita populiphila,Vaginatae,MH,43.06898,-89.383581,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_2,Amanita populiphila,Vaginatae,MH,43.069019,-89.383553,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_3,Amanita populiphila,Vaginatae,MH,43.069034,-89.383542,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_4,Amanita populiphila,Vaginatae,MH,43.069058,-89.383485,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_5,Amanita populiphila,Vaginatae,MH,43.069068,-89.383441,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_6,Amanita populiphila,Vaginatae,MH,43.069033,-89.383375,Dane,Monona bike path,2025-08-30,,poplar,Populus,,
+30280_7,Amanita populiphila,Vaginatae,MH,43.069033,-89.383375,Dane,Monona bike path,2025-08-31,,poplar,Populus,,
+30281,Amanita sp 44,Vaginatae,MH,42.857187,-89.498141,Dane,Brooklyn Wildlife Area,2025-09-10,,bur oak,Quercus macrocarpa,black oak,Quercus velutina
+30282,Amanita sp 44,Vaginatae,MH,42.857206,-89.498088,Dane,Brooklyn Wildlife Area,2025-09-10,,bur oak,Quercus macrocarpa,black oak,Quercus velutina
+30283,,Validae,MH,42.857951,-89.499452,Dane,Brooklyn Wildlife Area,2025-09-10,,oak,Quercus,,
+30284,Amanita suballiacea,Phalloideae,MH,42.858424,-89.499873,Dane,Brooklyn Wildlife Area,2025-09-10,,red oak,Quercus rubra,black oak,Quercus velutina
+30285,Amanita sp 44,Vaginatae,MH,42.85867,-89.49986,Dane,Brooklyn Wildlife Area,2025-09-10,,oak,Quercus,,
+30286,Amanita porphyria,Validae,MH,46.885871,-87.882281,Marquette,Pine Lake,2025-09-13,,eastern hemlock,Tsuga canadensis,,
+30287,,Validae,CKS,46.885619,-87.878635,Marquette,Pine Lake,2025-09-13,,red pine,Pinus resinosa,white pine,Pinus strobus
+30291,,Validae,MH,46.87673,-87.84065,Marquette,Conway Lake,2025-09-14,,eastern hemlock,Tsuga canadensis,birch,Betula
+30293,Amanita porphyria,Validae,MH,46.877,-87.841578,Marquette,Conway Lake,2025-09-14,,eastern hemlock,Tsuga canadensis,fir,Abies
+40220,,Validae,AGW,46.84791,-90.82291,Bayfield,Martenson Property,2025-08-09,,red oak,Quercus rubra,,
